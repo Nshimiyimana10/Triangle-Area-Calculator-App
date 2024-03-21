@@ -1,0 +1,45 @@
+
+.triangle-cont{
+    margin-left: 40%;
+    width: 50%;
+    height: 70%;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#side-btn1{
+    margin-left: 30%;
+    margin-top: 2%;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+#side-btn2{
+    margin-left: 30%;
+    border: 2px solid blue;
+    border-radius:5px;
+}
+#side-btn3{
+    margin-left: 30%;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+#label1{
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+#label2{
+    margin-left: 40%;
+}
+#label3{
+    margin-left: 40%;
+}
+#submitBtn{
+    margin-left: 45%;
+    padding:10px;
+    border: 2px solid red;
+    border-radius:5px;
+    background-color: pink;
+    color:black;
+}
