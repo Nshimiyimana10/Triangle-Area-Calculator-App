@@ -501,3 +501,445 @@ let name = "Darling"
 
  console.log("Hello" + " " + name);
 
+ function getSum(a, b){
+if(a === b){
+  return a || b;
+}
+else{
+    return a + b;
+}
+ }
+
+ let number = 120.334;
+ let t;
+ let k;
+ let s;
+ t = number.toFixed(1);
+ t = Number(t);
+ k = parseInt(t);
+ s = parseFloat(t);
+ console.log(k);
+ console.log(s);
+
+ 
+ let word = "";
+ if(word){
+    console.log("true");
+    }
+ else{
+    console.log("false")
+ }
+
+ let nam1 = "Joanes";
+ function displayName(){
+    nam1 = "Quintus";
+    function myName(){
+       nam1 = "Bjd";
+      function sayHello(){
+        console.log(nam1);
+      }
+      //console.log(nam1)
+    }
+ }
+ displayName();
+console.log(displayName());
+
+let array = [1, 2, 3, 4];
+let arr2 = array.slice(1, 3);
+console.log(arr2);
+
+function greet(name) {
+    console.log("Hello, " + name);
+  }
+  
+  function welcome() {
+    console.log("Welcome to the program!");
+  }
+  
+  function main() {
+    let userName = "John";
+    greet(userName) + " " + welcome();
+    //welcome()
+}
+
+main();
+
+const person = {
+    name: 'John',
+    age: 30,
+    greet() {
+      console.log('Hello, my name is ' + this.name + ' and I am ' + this.age + ' years old.');
+    }
+  };
+
+  console.log(person.greet());
+
+  let phrase = "the quick brown fox";
+  phrase = phrase.split(" ");
+  let capWord = "";
+  for(let i = 0; i<phrase.length; i++){
+    capWord += phrase[i][0].toUpperCase() + phrase[i].substring(1);
+  }
+  console.log(capWord);
+
+  function difference(x){
+    if(x > 13){
+      return (x - 13) * 2;
+    }
+    else {
+       return (13 - x);
+    }
+    
+  }
+  console.log(difference(8));
+
+  function findSum(a, b){
+   if(a === b){
+    return (a + b) * 3;
+   }
+   else{
+    return a + b;
+   }
+  }
+
+  console.log(findSum(15, 30));
+
+  function abDiff(a){
+  if(a <= 19){
+    return 19 - a;
+  }
+  else{
+    return (a - 19) * 3;
+  }
+  }
+  console.log(abDiff(19));
+
+  function checkNum(a, b){
+   if(a === 50 || b === 50 || a + b === 50){
+    return true;
+   }
+   else{
+    return false;
+   }
+  }
+
+  console.log(checkNum(50, 50));
+
+  function positOrNeg(a, b){
+    if(a < 0 || b < 0){
+       return true;
+    }
+    else{
+        return false;
+    }
+  }
+
+  console.log(positOrNeg(10, 2));
+
+  function addStr(sTr){
+  if(sTr.substring(0, 2) === "Py"){
+    return sTr;
+
+  }
+  else{
+    return 'Py' + sTr;
+  }
+  }
+
+  console.log(addStr("Pythagoras"));
+  
+
+function checkRange(a, b, c){
+if(a >= 50 || a <= 99 || b>=50 || b <= 99 || c>=50 || c<= 99){
+    return true;
+}
+else{
+    return false;
+}
+}
+console.log(checkRange(50, 30, 22));
+
+function checkLargeNum(a, b, c){
+    if(a > b && a > c)
+    {
+        return a;
+    }
+    else if( b > a && b > c ){
+        return b;
+    } 
+    else{
+        return c;
+    }
+
+    }
+
+    console.log(checkLargeNum(40, 30, 10));
+
+    function checkClosest(a, b){
+      if(a > b && a < 100){
+         return a;
+      }
+      else{
+        return b;
+      }
+    }
+
+    console.log(checkClosest(70, 40));
+
+    function checkRangeNum(a, b){
+        if(a >= 40 && a <= 60 || a >= 70 && a <= 100){
+            return true;
+
+        }
+        else if(b >= 40 && b <= 60 || b >= 70 && b <= 100){
+            return true;
+
+        }
+        else{
+            return false;
+        }
+
+    }
+    console.log(checkRangeNum(20, 30));
+
+    function computeSum(a, b){
+        if(a + b >= 50 && a + b <= 80){
+            return 65;
+        }
+        else{
+            return 80;
+        }
+
+    }
+
+    console.log(computeSum(30, 10));
+
+    function toCheckSum(a, b){
+      if(a === 8 || b === 8 || a - b === 8 
+        || b -a === 8 || a + b === 8){
+        return true;
+      }
+      else{
+        return false;
+      }
+    }
+console.log(toCheckSum(20, 12));
+
+function checkTheNumbers(x, y, z){
+  if(x === y && x === z && y === z){
+    return 30;
+  }
+  else if(x === y || x === z || y === z){
+    return 40;
+  }
+  else{
+    return 20;
+  }
+}
+
+console.log(checkTheNumbers(20, 30, 10));
+
+function checkOneNum(a, b, c){
+    if(a >= 20 || a < b || a < c 
+        ||b >= 20 || b < a || b < c 
+        || c >= 20 || c < b || c < b 
+        || c >= 20 || c < a || c < a){
+      return true;
+    }
+    else{
+        return false;
+    }
+
+}
+
+console.log(checkOneNum(10, 10, 12));
+
+function upperCase(string){
+   if(string.length < 3){
+    return string.toUpperCase();
+   }
+   else{
+    return string.substring(0,3).toLowerCase() + string.slice(3);
+   }
+}
+
+console.log(upperCase("JOANES"));
+
+function multipleOf(a, b){
+  if(a % 7 === 0 || b % 11 === 0){
+     return true;
+  }
+  else{ 
+    return false;
+  }
+}
+console.log(multipleOf(10, 17));
+
+function sortStr(string){
+  let newStr = string.toLowerCase().split("").reverse().sort().join("");
+  return newStr;
+}
+console.log(sortStr("Nshimiyimana"));
+
+function capitalizeWord(string){
+
+  string = string.split(" ");
+  for(let i = 0; i < string.length; i++){
+  string[i] = string[i][0].toUpperCase() + string[i].substr(1);
+  }
+  return string.join(" ");
+
+}
+
+console.log(capitalizeWord("the earth revolves around the sun"));
+
+function countVowels(str){
+let vowels = str.match(/[i,u,o,a,e]/g);
+vowels = vowels.length;
+return vowels;
+}
+console.log(countVowels("nshimiyimana"));
+
+function removeLastChar(str){
+let newStr = str.slice(1, str.length-1);
+return newStr;
+}
+console.log(removeLastChar("Joanes"));
+
+function halfString(str){
+if(str.length % 2 === 0){
+  return str.slice(0, str.length/2);
+}
+else{
+  return str;
+}
+}
+
+console.log(halfString("Nshimiyimana"));
+
+function concatinateTwoStrings(str1, str2){
+  let stra = str1.slice(1);
+  let strb = str2.slice(1);
+  let newStr = stra + strb;
+  return newStr;
+}
+
+console.log(concatinateTwoStrings("NSHIMIYIMANA", "Joanes"));
+
+function lastCharacters(str){
+  if(str.length >= 3){
+     return str.slice(-3) + str;
+  }
+  else{
+    "This is unrequired string";
+  }
+}
+
+console.log(lastCharacters("Nshimiyimana"));
+
+console.log(("Nshim".length + 1)/2);
+
+function oddString(str){
+  let middle = (str.length + 1)/2
+if(str.length >=3 && str.length % 2 !== 0){
+  return str.slice(middle-2, middle+1)
+}
+else{
+  return str;
+}
+}
+console.log(oddString("Python"));
+
+function startWith(str){
+  if(str.length >= 3 && (str.startsWith("Los") || str.startsWith("New"))){
+      return str;
+  }
+  else{
+    return "string not satisfying the condition";
+  }
+}
+
+console.log(startWith("Los Angeles"));
+
+function firstOrLast(str){
+if(str[0] === "P" || str.length-1 === "P"){
+  return str.slice(1, str.length -1);
+
+} else{
+  return str;
+}
+}
+console.log(firstOrLast("Programme"));
+
+function nCharStr(str){
+  let firstChar = str.slice(0,2);
+  let lastChar = str.slice(-2);
+  let strConcat = firstChar + lastChar;
+  return strConcat;
+}
+
+console.log(nCharStr("Nshimiyimana"));
+
+function checkPosition(array){
+  if(array.length >= 1 && (array[0] === 1 || array.length-1 === 1)){
+       return true;
+  }
+  else{
+    return false;
+  }
+}
+console.log(checkPosition([1, 2, 3, 4]));
+
+
+function arreleme(){
+ let arr = [2,4,t];
+ if(arr[0] === arr.length-1){
+  return true;
+ } else{
+  return false;
+ }
+}
+
+console.log(arreleme());
+
+function threeChar(array){
+if(array.length >= 3 && (array.slice(0, 3) === array.slice(-3))){
+       return true;
+}
+else{
+  return false;
+}
+}
+
+console.log(threeChar([1,2,3,4,5,6]));
+function newArr(arr1, arr2){
+  let arr3 = [arr1[1], arr2[1]];
+  return arr3;
+}
+console.log(newArr([1,2,3],[5,6,7]));
+
+function containNum(arr){
+if(arr.length ==2 &&(arr[0]===1 || arr[1]===3)){
+  return true;
+}
+else{
+  return false;
+}
+}
+console.log(containNum([1,3,5]));
+
+function largeArray(array){
+  let arr1 = [];
+  let arr2 = [];
+  for(let i = 0; i < array.length; i++){
+  if(array[i] % 2 === 0){
+    arr1 += array[i];
+  }
+  else{
+    arr2 += array[i];
+  }}
+  return [arr1 || arr2];
+}
+console.log(largeArray([1,2,3,4,5,6,7,8,9,10]))
+
+
